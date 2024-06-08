@@ -1,0 +1,32 @@
+body{
+    margin:0;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.header{
+    background-color: grey;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.content{
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.books-container{
+    width:90%;
+    height:90%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 10%;
+}
