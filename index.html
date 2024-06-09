@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
+    <title>Library</title>  
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" defer>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="text">Library</div>
-            <div class="add-book"><button>Add Book</button></div>
+            <div class="add-book"><button id="add-book-button">Add Book</button></div>
         </div>
         <div class="content">
-            <div class="books-container"></div>
+            <div class="add-dialog-box">
+                <div class="name">
+                    <input id="name" name="name" type="text" placeholder="Name of book">
+                </div>
+                <div class="author">
+                    <input id="author" name="author" type="text" placeholder="Name of author">
+                </div>
+                <div class="pages">
+                    <input id="pages" name="pages" type="number"placeholder="Number of Pages">
+                </div>
+                <div class="add-button-container">
+                    <button id="finish-add-button">Add</button>
+                </div> 
+                </div>
+                <div class="books-container">
+
+                </div>
+            </div>
         </div>
     </div>
 </body>
