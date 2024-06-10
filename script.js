@@ -1,14 +1,11 @@
 const myLibrary = [];
 let id = 1;
 
-function Book(id, name,author,pages,complete) {
-    return{
-        id,
-        name,
-        author,
-        pages,
-        complete
-    }
+function Book(id, name,author,pages) {
+    this.id = id;
+    this.name = name;
+    this.author = author;
+    this.pages = pages;
      
 }
 
@@ -80,7 +77,8 @@ addBookButton.addEventListener('click',()=>{
 
 finishAddButton.addEventListener('click',()=>{
     document.getElementsByClassName('add-dialog-box')[0].style.display="none";
-    addBookToLibrary(Book(id ,name.value,author.value,pages.value,false));
+    let newBook = new Book(id,name.value,author.value,pages.value)
+    addBookToLibrary(newBook);
     id += 1;
     name.value = "";
     author.value = "";
